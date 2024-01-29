@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* This ensures the grid is centered vertically */
+      background-color: black;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px; /* Adjust the space between images as needed */
+
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transform:perspective(800px) rotate(20deg);
+      transform-origin: center;
+      transition: 0.5s;
+    }
+    .image-grid:hover img {
+          opacity:0.1;
+    }
+    .image-grid img:hover{
+      transform:perspective(800px) rotate(0deg); 
+      opacity: 1;
+    }
+  </style>
+  <title>Three Images Side by Side</title>
+</head>
+<body>
+  <div class="image-grid">
+    <div>
+      <img src="https://priyanshu-240499.github.io/Assignments-CSS/final/assets/il_fullxfull.2947254491_3h0z.webp" alt="Image 1">
+    </div>
+    <div>
+      <img src="https://priyanshu-240499.github.io/Assignments-CSS/final/assets/il_fullxfull.4341390936_pe43.webp" alt="Image 2">
+    </div>
+    <div>
+      <img src="https://priyanshu-240499.github.io/Assignments-CSS/final/assets/81M1evI0qJL._UX679_.jpg" alt="Image 3">
+    </div>
+  </div>
+</body>
+</html>
